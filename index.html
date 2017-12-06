@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Project Altis Launcher</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://projectaltis.com/min/?g=css">
+    <script src="/jquery.min.js"></script>
+    <link rel="stylesheet" href="/our.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         @font-face {
@@ -102,7 +102,7 @@
             var statusdom = $('#status')[0];
             if(navigator.userAgent.indexOf('Altis Launcher') === -1){
                 statusdom.className = "status is-danger";
-                statusdom.innerHTML = 'You are using an outdated launcher! <a href="https://github.com/ProAltis/Launcher-Releases/releases/download/v1.3.2/Setup.exe">Download latest</a>.'
+                statusdom.innerHTML = 'You are using an outdated launcher! <a href="https://projectaltis.com/play">Download latest</a>.'
             }
             else {
                 var updateStatus = function (worst_status) {
@@ -161,10 +161,10 @@
             }
         </script>
 		<script>
-			$.get('https://proaltis.github.io/Launcher-Releases/blogpost.html', function (data) {
+			$.get('/blogpost.html', function (data) {
 				$('#blogpost')[0].innerHTML = data;
             });
-			$.get('https://proaltis.github.io/Launcher-Releases/blogtitle.html', function (data) {
+			$.get('/blogtitle.html', function (data) {
 				$('#blogtitle')[0].innerHTML = data;
             });
 		</script>
@@ -177,7 +177,7 @@
     <div class="push"></div>
     <div class="footer">
         <a href="https://www.projectaltis.com/changelog" style="margin-left:25px;float:left;" target="_blank">Latest Release Notes</a>
-        <a href="https://github.com/CodeAnGo/ProjectAltis-docs/tree/master/changelogs" style="margin-right:25px;float:right;" target="_blank">Release History</a>
+        <a href="https://github.com/ProAltis/Changelogs/tree/master/changelogs" style="margin-right:25px;float:right;" target="_blank">Release History</a>
     </div>
 
     <script>
